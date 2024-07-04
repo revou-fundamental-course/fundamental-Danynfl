@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="displayCurrentTime()">
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="assets/revou.png" alt="Logo" class="nav-logo">
+            </div>
+            <!-- NAVIGASI -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="background-overlay">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="profile">
+                <img src="assets/dany.jpg" alt="Profile Photo">
+                <div class="profile-info">
+                    <h2>Dany Naufal Aziz</h2>
+                    <p>Halo semuanya,</p>
+                    <p>Ini adalah mini portofolio saya
+                        <p>portfolio ini adalah tugas untuk memenuhi tugas fundamental dari kelas revo U</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTOFOLIO -->
+    <section id="portfolio">
+        <div class="background-overlay">
+            <h2>My Work</h2>
+            <p>Berikut adalah pekerjaan saya atas portofolio saya</p>
+            <div class="work-gallery">
+                <div class="work-item">
+                    <img src="assets/html.jpg" alt="Work 1">
+                    <p>HTML</p>
+                </div>
+                <div class="work-item">
+                    <img src="assets/css.webp" alt="Work 2">
+                    <p>CSS</p>
+                </div>
+                <div class="work-item">
+                    <img src="assets/js.webp" alt="Work 3">
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact">
+        <div class="background-overlay">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select><br><br>
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="current-time"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Danynflaziz_. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
